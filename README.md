@@ -15,3 +15,15 @@
 ```
     docker run -d -p 8080:3001 --name dockertest test
 ```
+
+#docker compose up
+
+```
+    docker-compose up -d
+```
+
+#docker compose down
+
+```
+    docker-compose down
+```
