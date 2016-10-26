@@ -1,0 +1,14 @@
+version: "2"
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    ports:
+      - "8080:80"
+    links:
+      - app
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile

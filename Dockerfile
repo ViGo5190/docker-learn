@@ -1,6 +1,6 @@
-MAINTAINER Stanislav Gumeniuk i@vigo.su
-
 FROM node:6.7
+
+MAINTAINER Stanislav Gumeniuk i@vigo.su
 
 ADD . /code
 
