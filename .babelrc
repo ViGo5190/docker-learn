@@ -1,0 +1,42 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        "es2015",
+        "stage-0"
+      ],
+      "plugins": [
+        ["transform-runtime", {
+          "polyfill": false,
+          "regenerator": true
+        }]
+      ]
+    },
+
+    "production": {
+      "presets": [
+        "es2015",
+        "stage-0"
+      ],
+      "plugins": [
+        ["transform-runtime", {
+          "polyfill": false,
+          "regenerator": true
+        }]
+      ]
+    },
+
+    "test": {
+      "presets": [
+        "es2015",
+        "stage-0"
+      ],
+      "plugins": [
+        ["transform-runtime", {
+          "polyfill": false,
+          "regenerator": true
+        }]
+      ]
+    }
+  }
+}
