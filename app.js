@@ -1,5 +1,14 @@
 'use strict';
 
-require('babel-core');
-require('babel-register')();
-require('./src/app.js');
+const Koa = require('koa');
+const KoaLogger = require('koa-logger');
+const app = new Koa();
+
+
+app.use(KoaLogger());
+// response
+app.use(ctx => {
+    ctx.body = 'Hello Koa';
+});
+
+app.listen(3001);
